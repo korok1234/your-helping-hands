@@ -11,3 +11,16 @@
   .hero-actions > .text-link { display: inline-flex; align-items: center; min-height: 44px; font-size: 20px; font-weight: 600; white-space: nowrap; }
   .hero-actions > .button { padding: 16px; gap: 16px; }
 }
+
+.hourly-section { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; align-items: start; }
+.hourly-rate { background: var(--pale); border: 1px solid var(--line); padding: 36px; border-radius: 5px; }
+.hourly-rate h2, .pricing-factors h2 { font-size: 42px; }
+.hourly-rate .price { font-size: 64px; }
+.pricing-factors article { border-bottom: 1px solid var(--line); padding: 20px 0; }
+.pricing-factors h3 { font-size: 27px; margin-bottom: 10px; }
+.pricing-factors article p { margin: 0; font-size: 14px; }
+@media (max-width: 720px) {
+  .hourly-section { grid-template-columns: 1fr; gap: 36px; }
+  .hourly-rate { padding: 25px; }
+  .hourly-rate h2, .pricing-factors h2 { font-size: 36px; }
+}
